@@ -2,10 +2,12 @@ import numpy as np
 
 lead_I = np.array([...]) 
 lead_II = np.array([...])
+lead_III = np.array([...])
 
-aVR = -(lead_I + lead_II) / 2
-aVL = lead_I - lead_II / 2
-aVF = lead_II - lead_I / 2
+# more theoretically correct
+aVR = -((I + II) / 2)
+aVL = (I - III) / 2
+aVF = (II + III) / 2
 
 print("aVR:", aVR)
 print("aVL:", aVL)
